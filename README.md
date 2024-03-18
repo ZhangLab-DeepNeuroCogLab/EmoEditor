@@ -1,7 +1,8 @@
 # Make Me Happier: Evoking Emotions Through Image Diffusion Models
 
-## [Demo]() | [Paper](https://arxiv.org/pdf/2403.08255.pdf) | [Data](https://drive.google.com/drive/folders/1e6fcuAoPS5kUAjd_RAmKeiRE3-ckT4uu?usp=sharing)
-PyTorch implementation of EmoEditor, an emotion-evoked diffusion model. Code and data will be released upon paper acceptance.
+## [Demo]() | [Paper](https://arxiv.org/pdf/2403.08255.pdf) | [Data]()
+PyTorch implementation of EmoEditor, an emotion-evoked diffusion model.  
+Code and data will be released upon paper acceptance.
 
 **[Make Me Happier: Evoking Emotions Through Image Diffusion Models](https://arxiv.org/pdf/2403.08255.pdf)**  
 Qing Lin, [Jingfeng Zhang](https://zjfheart.github.io/), [Yew Soon Ong](https://www3.ntu.edu.sg/home/asysong/), [Mengmi Zhang](https://a0091624.wixsite.com/deepneurocognition-1)*  
