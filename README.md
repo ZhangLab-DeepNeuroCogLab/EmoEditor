@@ -34,6 +34,7 @@ Compare with five state-of-the-art methods: (1) [Color-transfer(CT)](https://www
 <div align=left><img src="./fig/fig6_user_study.png" width="50%" height="50%" ></div>  
 The Human Psychophysics Experiment Results. The average proportion of images that human participants prefer our EmoEditor over other competitive methods is 56%. Chance is 50% in the red dotted line.  
 
+  
 | **Method** | **EMR(%)↑** | **ESR(%)↑** | **ENRD↓** | **ESS↓** |
 |:---|:---:|:---:|:---:|:---:|
 | **CT** | 6.89 | 79.32 | 32.61 | **7.36** |
