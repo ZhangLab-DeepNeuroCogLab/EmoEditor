@@ -28,7 +28,7 @@ The generated images evoke a sense of happiness in viewers, contrasting with the
 The dataset comprises two subsets: EmoPair-Annotated Subset (EPAS, left blue box) and EmoPair-Generated Subset (EPGS, right orange box). Each subset includes schematics depicting the creation, selection, and labeling of image pairs in the upper quadrants, with two example pairs in the lower quadrants. Each example pair comprises a source image (framed in green) and a target image. The classified source and target emotion labels (highlighted in red) and target-emotion-driven text instructions for image editing are provided.
 
 ## Benchmark
-human psychophysics experiments and four newly introduced metrics
+human psychophysics experiments and four newly introduced metrics  
 Compare with five state-of-the-art methods: (1) Color-transfer (CT); (2) Neural-Style-Transfer (NST); (3) CLIP-Styler (Csty); (4) Ip2p; (5) Large Model Series (LMS). This includes BLIP for image captioning, followed by GPT-3 for text instruction generation, and Ip2p for image editing based on the instructions.
 
 <div align=left><img src="./fig/fig6_user_study.png" width="50%" height="50%" ></div>  
@@ -44,6 +44,7 @@ The Human Psychophysics Experiment Results. The average proportion of images tha
 | **w/o $\mathcal{P}$** | 5.06 | 69.15 | <ins>20.08</ins> | 14.93 |
 | **w/o $L_{emb}$** | <ins>41.12</ins> | <ins>92.36</ins> | 23.02 | 16.06 |
 | **Ours** | **50.20** | **92.86** | 24.73 | 16.27 |
+  
 Emotion Matching Ratio (EMR) and Emotion Similarity Ratio (ESR) assess the extent to which the generated images evoke target emotions.  
 **EMR**: We use the emotion predictor $\mathcal{P}$ to predict the emotional category of generated images and calculate the proportion of alignment with the target emotions.  
 **ESR**: Our emotion predictor $\mathcal{P}$ produces emotion probability distributions $e_g$ on generated images and $e_s$ on source images. We introduce Kullback-Leibler Divergence distance $KLD(\cdot)$ and calculate ESR as the proportion of the generated images, where $KLD(e_g, e_{oh}) < KLD(e_s, e_{oh})$. $e_{oh}$ is the binary one-hot target emotion vector. It indicates the effect of edits introduced on the generated images in transitioning from the source emotion to the target emotion.  
