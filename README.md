@@ -32,7 +32,7 @@ The dataset comprises two subsets: EmoPair-Annotated Subset (EPAS, left blue box
 Compare with five state-of-the-art methods: (1) [Color-transfer(CT)](https://www.sciencedirect.com/science/article/abs/pii/S1077314206002189); (2) [Neural-Style-Transfer(NST)](https://arxiv.org/abs/1508.06576); (3) [CLIP-Styler(Csty)](https://openaccess.thecvf.com/content/CVPR2022/html/Kwon_CLIPstyler_Image_Style_Transfer_With_a_Single_Text_Condition_CVPR_2022_paper.html); (4) [Ip2p](https://openaccess.thecvf.com/content/CVPR2023/html/Brooks_InstructPix2Pix_Learning_To_Follow_Image_Editing_Instructions_CVPR_2023_paper.html); (5) Large Model Series (LMS). This includes [BLIP](https://proceedings.mlr.press/v162/li22n.html) for image captioning, followed by [GPT-3](https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html) for text instruction generation, and [Ip2p](https://openaccess.thecvf.com/content/CVPR2023/html/Brooks_InstructPix2Pix_Learning_To_Follow_Image_Editing_Instructions_CVPR_2023_paper.html) for image editing based on the instructions.
 
 <div align=left><img src="./fig/fig6_user_study.png" width="50%" height="50%" ></div>  
-The Human Psychophysics Experiment Results. The average proportion of images that human participants prefer our EmoEditor over other competitive methods is 56\%. Chance is 50\% in the red dotted line.  
+The Human Psychophysics Experiment Results. The average proportion of images that human participants prefer our EmoEditor over other competitive methods is 56%. Chance is 50% in the red dotted line.  
 
 | **Method** | **EMR(%)↑** | **ESR(%)↑** | **ENRD↓** | **ESS↓** |
 |:---|:---:|:---:|:---:|:---:|
