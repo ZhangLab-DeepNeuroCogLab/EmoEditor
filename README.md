@@ -37,14 +37,14 @@ The Human Psychophysics Experiment Results. The average proportion of images tha
   
 | **Method** | **EMR(%)↑** | **ESR(%)↑** | **ENRD↓** | **ESS↓** |
 |:---|:---:|:---:|:---:|:---:|
-| **CT** | 6.89 | 79.32 | 32.61 | **7.36** |
-| **NST** | 34.42 | 92.01 | 34.42 | 18.57 |
-| **Csty** | 11.51 | 85.52 | 41.59 | 36.64 |
-| **Ip2p** | 2.53 | 67.76 | **9.82** | <ins>12.71</ins> |
-| **LMS** | 11.51 | 77.38 | 26.67 | 19.74 |
-| **w/o $\mathcal{P}$** | 5.06 | 69.15 | <ins>20.08</ins> | 14.93 |
-| **w/o $L_{emb}$** | <ins>41.12</ins> | <ins>92.36</ins> | 23.02 | 16.06 |
-| **Ours** | **50.20** | **92.86** | 24.73 | 16.27 |
+| **CT** | 6.89 | 79.32 | 33.29 | **7.36** |
+| **NST** | 34.42 | 92.01 | 34.45 | 18.57 |
+| **Csty** | 11.51 | 85.52 | 41.47 | 36.64 |
+| **Ip2p** | 2.53 | 67.76 | **9.39** | <ins>12.71</ins> |
+| **LMS** | 11.51 | 77.38 | 26.13 | 19.74 |
+| **w/o $\mathcal{P}$** | 5.06 | 69.15 | <ins>19.45</ins> | 14.93 |
+| **w/o $L_{emb}$** | <ins>43.35</ins> | <ins>91.62</ins> | 22.53 | 16.00 |
+| **Ours** | **50.20** | **92.86** | 23.98 | 16.27 |
   
 **Emotion Matching Ratio (EMR) and Emotion Similarity Ratio (ESR) assess the extent to which the generated images evoke target emotions.**  
 **EMR**: We use the emotion predictor $\mathcal{P}$ to predict the emotional category of generated images and calculate the proportion of alignment with the target emotions.  
