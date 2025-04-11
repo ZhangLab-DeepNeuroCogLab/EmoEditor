@@ -27,6 +27,7 @@ The generated images evoke a sense of happiness in viewers, contrasting with the
 <div align=left><img src="./fig/fig4_dataset.png" width="90%" height="90%" ></div>  
 The dataset comprises two subsets: EmoPair-Annotated Subset (EPAS, left blue box) and EmoPair-Generated Subset (EPGS, right orange box). Each subset includes schematics depicting the creation, selection, and labeling of image pairs in the upper quadrants, with two example pairs in the lower quadrants. Each example pair comprises a source image (framed in green) and a target image. The classified source and target emotion labels (highlighted in red) and target-emotion-driven text instructions for image editing are provided.
 
+<!--
 ## Benchmark
 **human psychophysics experiments and four newly introduced metrics**  
 Compare with five state-of-the-art methods: (1) [Color-transfer(CT)](https://www.sciencedirect.com/science/article/abs/pii/S1077314206002189); (2) [Neural-Style-Transfer(NST)](https://arxiv.org/abs/1508.06576); (3) [CLIP-Styler(Csty)](https://openaccess.thecvf.com/content/CVPR2022/html/Kwon_CLIPstyler_Image_Style_Transfer_With_a_Single_Text_Condition_CVPR_2022_paper.html); (4) [Ip2p](https://openaccess.thecvf.com/content/CVPR2023/html/Brooks_InstructPix2Pix_Learning_To_Follow_Image_Editing_Instructions_CVPR_2023_paper.html); (5) Large Model Series (LMS). This includes [BLIP](https://proceedings.mlr.press/v162/li22n.html) for image captioning, followed by [GPT-3](https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html) for text instruction generation, and [Ip2p](https://openaccess.thecvf.com/content/CVPR2023/html/Brooks_InstructPix2Pix_Learning_To_Follow_Image_Editing_Instructions_CVPR_2023_paper.html) for image editing based on the instructions.
@@ -52,6 +53,7 @@ The Human Psychophysics Experiment Results. The average proportion of images tha
 **Emotion-Neutral Region Deviation (ENRD) and Edge Structure Similarity (ESS) measure the structural coherence and semantic consistency between source and generated images.**  
 **ENRD**: We first identify emotionally neutral regions on the source images by employing the [Grad-CAM](https://arxiv.org/abs/1610.02391) technique through our emotion predictor $\mathcal{P}$. We then binarize the Grad-CAM maps with a threshold of 0.5, where a value of 1 on the resulting binary map signifies regions triggering emotions. By excluding these regions, we compute pixel-level L1 distance between emotionally neutral regions of the source and generated images.  
 **ESS**: We apply the Canny edge detection algorithm on both source and generated images using thresholds of 200 and 500. Next, we compute the L1 norm between these edge maps to quantify their structural differences.  
+-->
 
 ## BibTeX
 ```
