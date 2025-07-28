@@ -5,7 +5,7 @@ PyTorch implementation of EmoEditor, an emotion-evoked diffusion model.
 This work is accepted by ICCV 2025.
 
 **[Make Me Happier: Evoking Emotions Through Image Diffusion Models](https://arxiv.org/pdf/2403.08255.pdf)**  
-Qing Lin, [Jingfeng Zhang](https://zjfheart.github.io/), [Yew Soon Ong](https://www3.ntu.edu.sg/home/asysong/), [Mengmi Zhang](https://a0091624.wixsite.com/deepneurocognition-1)*  
+Qing Lin, [Jingfeng Zhang](https://zjfheart.github.io/), [Yew-Soon Ong](https://www3.ntu.edu.sg/home/asysong/), [Mengmi Zhang](https://a0091624.wixsite.com/deepneurocognition-1)*  
 *Corresponding author  
 
 ## Abstract
