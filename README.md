@@ -19,11 +19,11 @@ Despite the rapid progress in image generation, emotional image editing remains 
 
 ## EmoPair Dataset
 <div align=left><img src="./fig/fig4_dataset.png" width="99%" height="99%" ></div>  
-The dataset comprises two subsets: EmoPair-Annotated Subset (EPAS, left blue box) and EmoPair-Generated Subset (EPGS, right orange box). Each subset includes schematics depicting the creation, selection, and labeling of image pairs in the upper quadrants, with two example pairs in the lower quadrants. Each example pair comprises a source image (framed in green) and a target image. The classified source and target emotion labels (highlighted in red) and target-emotion-driven text instructions for image editing are provided.
+<!-- The dataset comprises two subsets: EmoPair-Annotated Subset (EPAS, left blue box) and EmoPair-Generated Subset (EPGS, right orange box). Each subset includes schematics depicting the creation, selection, and labeling of image pairs in the upper quadrants, with two example pairs in the lower quadrants. Each example pair comprises a source image (framed in green) and a target image. The classified source and target emotion labels (highlighted in red) and target-emotion-driven text instructions for image editing are provided. -->
 
 * Download our [EPGS dataset](https://drive.google.com/drive/folders/10jwTjzVpTLTOe8HnzgLBgtyFvYPMlybb?usp=drive_link) and put it in `EmoPair/EPGS/`.
 * Download [Ip2p images](https://instruct-pix2pix.eecs.berkeley.edu/clip-filtered-dataset/) and put them in `EmoPair/EPAS/ip2p_clip/`.
-* The dataset annotation can be found in [data_EmoPair.json](https://drive.google.com/file/d/1aEHnfqVPwtey6zv3cRnmQvbtWhF5c5Z-/view?usp=drive_link).
+* Download dataset annotation [data_EmoPair.json](https://drive.google.com/file/d/1aEHnfqVPwtey6zv3cRnmQvbtWhF5c5Z-/view?usp=drive_link) and put it in `json/`.
 
 ## Environment Setup
 ```
@@ -40,7 +40,16 @@ pip install grad-cam
 ```
 
 ## Training & Testing
-
+* Set up the environment.
+* Download our pretrained [emotion predictor](https://drive.google.com/file/d/1LWcj-ENbgqefXjuz2aVB8ynzUpnQYnim/view?usp=drive_link) and put it in `emo_predictor/`.
+* Follow the instructions to download the EmoPair Dataset.
+For training, 
+* Run `python train.py`.
+For testing,
+* Download our [models](https://drive.google.com/drive/folders/1qwTDU51XMXCa6Pjw9wNyZEUgr6ZxqjMl?usp=drive_link) and put them in `model/`.
+* Replace the `input_path` in `test.py` with the path to your test image.
+* Adjust `random_seed`, `target_emo`, and other `ArgumentParser` options as needed.
+* Run `python test.py`.
 
 
 ## BibTeX
