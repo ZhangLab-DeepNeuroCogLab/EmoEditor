@@ -14,8 +14,6 @@ Despite the rapid progress in image generation, emotional image editing remains 
 <div align=left><img src="./fig/fig1_teaser.png" width="99%" height="99%" ></div>  
 <!-- The generated images evoke a sense of happiness in viewers, contrasting with the negative emotions elicited by the source images. Given a source image that triggers negative emotions (framed in green), our method (Ours) synthesizes a new image that elicits the given positive target emotions (in red), while maintaining the essential elements and structures of the scene. For instance, our method replaces the anger-inducing flames in the source image with cute-shaped lamps to evoke the target emotion of amusement. While in an outdoor setting, the raging fire is substituted with a tranquil, lush meadow to inspire a sense of awe. For comparisons, we include other competitive methods. The blue number below each image represents its CAM-based ESMI score, with higher values being better.  -->
 
-## Generalization to Real-world Scenarios
-<div align=left><img src="./fig/fig12_pos2pos.png" width="99%" height="99%" ></div>
 
 ## EmoPair Dataset
 <div align=left><img src="./fig/fig4_dataset.png" width="99%" height="99%" ></div>  
@@ -43,13 +41,19 @@ pip install grad-cam
 * Set up the environment.
 * Download our pretrained [emotion predictor](https://drive.google.com/file/d/1LWcj-ENbgqefXjuz2aVB8ynzUpnQYnim/view?usp=drive_link) and put it in `emo_predictor/`.
 * Follow the instructions to download the EmoPair Dataset.
+
 For training, 
 * Run `python train.py`.
+
 For testing,
 * Download our [models](https://drive.google.com/drive/folders/1qwTDU51XMXCa6Pjw9wNyZEUgr6ZxqjMl?usp=drive_link) and put them in `model/`.
 * Replace the `input_path` in `test.py` with the path to your test image.
 * Adjust `random_seed`, `target_emo`, and other `ArgumentParser` options as needed.
 * Run `python test.py`.
+
+
+## Generalization to Real-world Scenarios
+<div align=left><img src="./fig/fig12_pos2pos.png" width="99%" height="99%" ></div>
 
 
 ## BibTeX
