@@ -69,9 +69,9 @@ Results from Human Psychophysics Experiments. The proportions of images that hum
 Data from all participants in our human psychophysics experiments are available at the [link](https://drive.google.com/file/d/1m-N02qJ8E0jA8KmMbKzqVSWH8lpYV5V9/view?usp=drive_link).
 
 ## Emotional Structure Matching Index (ESMI)
-$$ ESMI = \alpha \times S_{str} + (1 - \alpha) \times S_{emo} $$
-* $𝑆_𝑒𝑚𝑜$ (Emotional Evocation): KLD measuring shift toward target emotion.
-* $𝑆_𝑠𝑡𝑟$ (Structural Preservation): Ensures edits focus on emotion regions ($𝑅_𝑒𝑚𝑜$​) and preserve neutral ($𝑅_𝑛𝑒𝑢​$). $𝑅_𝑒𝑚𝑜$ from Grad-CAM or human annotations.
+$ESMI = \alpha \times S_{str} + (1 - \alpha) \times S_{emo}$
+* $𝑆_{𝑒𝑚𝑜}$ (Emotional Evocation): KLD measuring shift toward target emotion.
+* $𝑆_{𝑠𝑡𝑟}$ (Structural Preservation): Ensures edits focus on emotion regions ($𝑅_{𝑒𝑚𝑜}$​) and preserve neutral ($𝑅_{𝑛𝑒𝑢}​$). $𝑅_{𝑒𝑚𝑜}$ from Grad-CAM or human annotations.
 
 ## Visualization
 <div align=left><img src="./fig/fig9_visualization.png" width="99%" height="99%" ></div>
