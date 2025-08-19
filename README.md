@@ -25,7 +25,7 @@ Despite the rapid progress in image generation, emotional image editing remains 
 
 ## EmoEditor Model
 <div align=left><img src="./fig/fig3_model.png" width="70%" height="70%" ></div>  
-EmoEditor is an image diffusion model with local (shaded in green) and global (shaded in blue) branches. The pre-trained VAE’s encoder $\mathcal{E}$ and decoder $ \mathcal{D} $ are fixed during training and inference. Exclusively employed during inference, the fixed emotion predictor $ \mathcal{P} $ predicts emotions on generated images for iterative emotion inference.
+EmoEditor is an image diffusion model with local (shaded in green) and global (shaded in blue) branches. The pre-trained VAE’s encoder $\\mathcal{E}$ and decoder $\\mathcal{D}$ are fixed during training and inference. Exclusively employed during inference, the fixed emotion predictor $\\mathcal{P}$ predicts emotions on generated images for iterative emotion inference.
 
 ## Environment Setup
 ```
