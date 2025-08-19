@@ -69,7 +69,7 @@ Results from Human Psychophysics Experiments. The proportions of images that hum
 Data from all participants in our human psychophysics experiments are available at the [link](https://drive.google.com/file/d/1m-N02qJ8E0jA8KmMbKzqVSWH8lpYV5V9/view?usp=drive_link).
 
 ## Emotional Structure Matching Index (ESMI)
-$ ESMI = \alpha \times S_{str} + (1 - \alpha) \times S_{emo} $
+$$ ESMI = \alpha \times S_{str} + (1 - \alpha) \times S_{emo} $$
 
 
 ## Visualization
