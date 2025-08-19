@@ -2,7 +2,7 @@
 
 ## [Paper](https://arxiv.org/pdf/2403.08255.pdf) | [Dataset](https://drive.google.com/drive/folders/1aaZUNo-domsSOH_2_flRU8LMZjptPU28?usp=drive_link) | [Models](https://drive.google.com/drive/folders/1Wkrq5d3JC96PecGJQliz7h5cUmfACpqi?usp=sharing)
 PyTorch implementation of EmoEditor, an emotion-evoked diffusion model.  
-This work is accepted by ICCV 2025.
+This work has been accepted to ICCV 2025.
 
 **[Make Me Happier: Evoking Emotions Through Image Diffusion Models](https://arxiv.org/pdf/2403.08255.pdf)**  
 Qing Lin, [Jingfeng Zhang](https://zjfheart.github.io/), [Yew-Soon Ong](https://www3.ntu.edu.sg/home/asysong/), [Mengmi Zhang](https://a0091624.wixsite.com/deepneurocognition-1)*  
@@ -21,33 +21,27 @@ Despite the rapid progress in image generation, emotional image editing remains 
 <div align=left><img src="./fig/fig4_dataset.png" width="99%" height="99%" ></div>  
 The dataset comprises two subsets: EmoPair-Annotated Subset (EPAS, left blue box) and EmoPair-Generated Subset (EPGS, right orange box). Each subset includes schematics depicting the creation, selection, and labeling of image pairs in the upper quadrants, with two example pairs in the lower quadrants. Each example pair comprises a source image (framed in green) and a target image. The classified source and target emotion labels (highlighted in red) and target-emotion-driven text instructions for image editing are provided.
 
-<!--
-## Benchmark
-**human psychophysics experiments and four newly introduced metrics**  
-Compare with five state-of-the-art methods: (1) [Color-transfer(CT)](https://www.sciencedirect.com/science/article/abs/pii/S1077314206002189); (2) [Neural-Style-Transfer(NST)](https://arxiv.org/abs/1508.06576); (3) [CLIP-Styler(Csty)](https://openaccess.thecvf.com/content/CVPR2022/html/Kwon_CLIPstyler_Image_Style_Transfer_With_a_Single_Text_Condition_CVPR_2022_paper.html); (4) [Ip2p](https://openaccess.thecvf.com/content/CVPR2023/html/Brooks_InstructPix2Pix_Learning_To_Follow_Image_Editing_Instructions_CVPR_2023_paper.html); (5) Large Model Series (LMS). This includes [BLIP](https://proceedings.mlr.press/v162/li22n.html) for image captioning, followed by [GPT-3](https://proceedings.neurips.cc/paper/2020/hash/1457c0d6bfcb4967418bfb8ac142f64a-Abstract.html) for text instruction generation, and [Ip2p](https://openaccess.thecvf.com/content/CVPR2023/html/Brooks_InstructPix2Pix_Learning_To_Follow_Image_Editing_Instructions_CVPR_2023_paper.html) for image editing based on the instructions.
+* Download our [EPGS dataset](https://drive.google.com/drive/folders/10jwTjzVpTLTOe8HnzgLBgtyFvYPMlybb?usp=drive_link) and put it in `EmoPair/EPGS/`.
+* Download [Ip2p images](https://instruct-pix2pix.eecs.berkeley.edu/clip-filtered-dataset/) and put them in `EmoPair/EPAS/ip2p_clip/`.
+* The dataset annotation can be found in [data_EmoPair.json](https://drive.google.com/file/d/1aEHnfqVPwtey6zv3cRnmQvbtWhF5c5Z-/view?usp=drive_link).
 
-<div align=left><img src="./fig/fig6_user_study.png" width="50%" height="50%" ></div>  
-The Human Psychophysics Experiment Results. The average proportion of images that human participants prefer our EmoEditor over other competitive methods is 56%. Chance is 50% in the red dotted line.  
+## Environment Setup
+```
+conda create -n emoeditor python=3.10
+conda activate emoeditor 
 
-  
-| **Method** | **EMR(%)↑** | **ESR(%)↑** | **ENRD↓** | **ESS↓** |
-|:---|:---:|:---:|:---:|:---:|
-| **CT** | 6.89 | 79.32 | 33.29 | **7.36** |
-| **NST** | 34.42 | <ins>92.01</ins> | 34.45 | 18.57 |
-| **Csty** | 11.51 | 85.52 | 41.47 | 36.64 |
-| **Ip2p** | 2.53 | 67.76 | **9.39** | <ins>12.71</ins> |
-| **LMS** | 11.51 | 77.38 | 26.13 | 19.74 |
-| **w/o $\mathcal{P}$** | 5.06 | 69.15 | <ins>19.45</ins> | 14.93 |
-| **w/o $L_{emb}$** | <ins>43.35</ins> | 91.62 | 22.53 | 16.00 |
-| **Ours** | **50.20** | **92.86** | 23.98 | 16.27 |
-  
-**Emotion Matching Ratio (EMR) and Emotion Similarity Ratio (ESR) assess the extent to which the generated images evoke target emotions.**  
-**EMR**: We use the emotion predictor $\mathcal{P}$ to predict the emotional category of generated images and calculate the proportion of alignment with the target emotions.  
-**ESR**: Our emotion predictor $\mathcal{P}$ produces emotion probability distributions $e_g$ on generated images and $e_s$ on source images. We introduce Kullback-Leibler Divergence distance $KLD(\cdot)$ and calculate ESR as the proportion of the generated images, where $KLD(e_g, e_{oh}) < KLD(e_s, e_{oh})$. $e_{oh}$ is the binary one-hot target emotion vector. It indicates the effect of edits introduced on the generated images in transitioning from the source emotion to the target emotion.  
-**Emotion-Neutral Region Deviation (ENRD) and Edge Structure Similarity (ESS) measure the structural coherence and semantic consistency between source and generated images.**  
-**ENRD**: We first identify emotionally neutral regions on the source images by employing the [Grad-CAM](https://arxiv.org/abs/1610.02391) technique through our emotion predictor $\mathcal{P}$. We then binarize the Grad-CAM maps with a threshold of 0.5, where a value of 1 on the resulting binary map signifies regions triggering emotions. By excluding these regions, we compute pixel-level L1 distance between emotionally neutral regions of the source and generated images.  
-**ESS**: We apply the Canny edge detection algorithm on both source and generated images using thresholds of 200 and 500. Next, we compute the L1 norm between these edge maps to quantify their structural differences.  
--->
+pip install torch torchvision torchaudio
+pip install diffusers
+pip install accelerate
+pip install transformers==4.49
+pip install opencv-python
+pip install scikit-image
+pip install grad-cam
+```
+
+## Training & Testing
+
+
 
 ## BibTeX
 ```
