@@ -38,18 +38,25 @@ pip install grad-cam
 ```
 
 ## Training & Testing
+For training,
 * Set up the environment.
 * Download our pretrained [emotion predictor](https://drive.google.com/file/d/1LWcj-ENbgqefXjuz2aVB8ynzUpnQYnim/view?usp=drive_link) and put it in `emo_predictor/`.
 * Follow the instructions to download the EmoPair Dataset.
 
-For training, 
-* Run `python train.py`.
+You can start training the model from scratch by running:
+```
+python train.py
+```
 
 For testing,
 * Download our [models](https://drive.google.com/drive/folders/1qwTDU51XMXCa6Pjw9wNyZEUgr6ZxqjMl?usp=drive_link) and put them in `model/`.
 * Replace the `input_path` in `test.py` with the path to your test image.
 * Adjust `random_seed`, `target_emo`, and other `ArgumentParser` options as needed.
-* Run `python test.py`.
+
+You can test the model by running:
+```
+python test.py
+```
 
 
 ## Generalization to Real-world Scenarios
