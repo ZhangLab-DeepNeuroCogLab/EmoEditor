@@ -89,7 +89,7 @@ Visualisation of Generated Images from Different Methods. The target emotion is 
 <div align=left><img src="./fig/fig12_pos2pos.png" width="99%" height="99%" ></div>
 Our EmoEditor can generalize to more challenging emotion editing scenarios. Source images are framed in green. Target emotions are in red.
 
-<ol type="(a)">
+<ol type="a">
   <li>Same-Valence Editing highlights our EmoEditor’s ability to produce images evoking emotions of the same positive valence as the source images. </li>
   <li>Neutral-Valence Editing demonstrates how our EmoEditor can transform neutral real-world images to evoke positive or negative emotions. </li>
   <li>Multi-Emotion Editing demonstrates its capability to generate images that evoke a wider range of emotions, providing more nuanced and diverse visual outputs. </li>
