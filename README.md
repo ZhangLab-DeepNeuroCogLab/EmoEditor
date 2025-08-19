@@ -24,8 +24,8 @@ Despite the rapid progress in image generation, emotional image editing remains 
 * Download dataset annotation [data_EmoPair.json](https://drive.google.com/file/d/1aEHnfqVPwtey6zv3cRnmQvbtWhF5c5Z-/view?usp=drive_link) and put it in `json/`.
 
 ## EmoEditor Model
-<div align=left><img src="./fig/fig3_model.png" width="99%" height="99%" ></div>  
-EmoEditor is an image diffusion model with local (shaded in green) and global (shaded in blue) branches. The pre-trained VAE’s encoder $\mathcal{E}$ and decoder $\mathcal{D}$ are fixed during training and inference. Exclusively employed during inference, the fixed emotion predictor $\mathcal{P}$ predicts emotions on generated images for iterative emotion inference.
+<div align=left><img src="./fig/fig3_model.png" width="70%" height="70%" ></div>  
+EmoEditor is an image diffusion model with local (shaded in green) and global (shaded in blue) branches. The pre-trained VAE’s encoder $ \mathcal{E} $ and decoder $ \mathcal{D} $ are fixed during training and inference. Exclusively employed during inference, the fixed emotion predictor $ \mathcal{P} $ predicts emotions on generated images for iterative emotion inference.
 
 ## Environment Setup
 ```
@@ -67,6 +67,9 @@ We have conducted a series of Mechanical Turk experiments using the [Psiturk](ht
 <div align=left><img src="./fig/fig6_user_study.png" width="99%" height="99%" ></div>
 Results from Human Psychophysics Experiments. The proportions of images that human participants prefer our EmoEditor over all other methods on the x-axis are presented. Chance is 50% (red dotted line). Error bars are standard errors. 
 Data from all participants in our human psychophysics experiments are available at the [link](https://drive.google.com/file/d/1m-N02qJ8E0jA8KmMbKzqVSWH8lpYV5V9/view?usp=drive_link).
+
+## Emotional Structure Matching Index (ESMI)
+$ ESMI = \alpha \times S_{str} + (1 - \alpha) \times S_{emo} $
 
 
 ## Visualization
