@@ -71,8 +71,12 @@ Data from all participants in our human psychophysics experiments are available 
 ## Emotional Structure Matching Index (ESMI)
 $ESMI = \alpha \times S_{str} + (1 - \alpha) \times S_{emo}$
 * $𝑆_{𝑒𝑚𝑜}$ (Emotional Evocation): KLD measuring shift toward target emotion.
-* $𝑆_{𝑠𝑡𝑟}$ (Structural Preservation): Ensures edits focus on emotion regions ($𝑅_{𝑒𝑚𝑜}$​) and preserve neutral ($𝑅_{𝑛𝑒𝑢}​$).
-  $𝑅_{𝑒𝑚𝑜}$ from Grad-CAM or human annotations.
+* $𝑆_{𝑠𝑡𝑟}$ (Structural Preservation): Ensures edits focus on emotion regions $𝑅_{𝑒𝑚𝑜}$​ and preserve neutral $𝑅_{𝑛𝑒𝑢}​$. $𝑅_{𝑒𝑚𝑜}$ from Grad-CAM or human annotations.
+
+To calculate ESMI, change `image_name_src`, `image_name_edit` and `tgt_emo`, and run
+```
+python metric_ESMI.py
+```
 
 ## Visualization
 <div align=left><img src="./fig/fig9_visualization.png" width="70%" height="70%" ></div>
