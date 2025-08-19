@@ -25,7 +25,7 @@ Despite the rapid progress in image generation, emotional image editing remains 
 
 ## EmoEditor Model
 <div align=left><img src="./fig/fig3_model.png" width="70%" height="70%" ></div>  
-EmoEditor is an image diffusion model with local (shaded in green) and global (shaded in blue) branches. The pre-trained VAE’s encoder $\\mathcal{E}$ and decoder $\\mathcal{D}$ are fixed during training and inference. Exclusively employed during inference, the fixed emotion predictor $\\mathcal{P}$ predicts emotions on generated images for iterative emotion inference.
+EmoEditor is an image diffusion model with local (shaded in green) and global (shaded in blue) branches. The pre-trained VAE’s encoder E and decoder D are fixed during training and inference. Exclusively employed during inference, the fixed emotion predictor P predicts emotions on generated images for iterative emotion inference.
 
 ## Environment Setup
 ```
@@ -70,7 +70,8 @@ Data from all participants in our human psychophysics experiments are available 
 
 ## Emotional Structure Matching Index (ESMI)
 $$ ESMI = \alpha \times S_{str} + (1 - \alpha) \times S_{emo} $$
-
+* $𝑆_𝑒𝑚𝑜$ (Emotional Evocation): KLD measuring shift toward target emotion.
+* $𝑆_𝑠𝑡𝑟$ (Structural Preservation): Ensures edits focus on emotion regions ($𝑅_𝑒𝑚𝑜$​) and preserve neutral ($𝑅_𝑛𝑒𝑢​$). $𝑅_𝑒𝑚𝑜$ from Grad-CAM or human annotations.
 
 ## Visualization
 <div align=left><img src="./fig/fig9_visualization.png" width="99%" height="99%" ></div>
