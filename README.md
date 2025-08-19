@@ -58,6 +58,11 @@ You can test the model by running:
 python test.py
 ```
 
+## Human Psychophysics Experiments on Amazon Mechanical Turk
+We have conducted a series of Mechanical Turk experiments using the [Psiturk](https://psiturk.org/) platform, which requires JavaScript, HTML, and Python 2.7.
+
+Data from all participants in our human psychophysics experiments are available at the [link](https://drive.google.com/file/d/1m-N02qJ8E0jA8KmMbKzqVSWH8lpYV5V9/view?usp=drive_link).
+
 
 ## Generalization to Real-world Scenarios
 <div align=left><img src="./fig/fig12_pos2pos.png" width="99%" height="99%" ></div>
