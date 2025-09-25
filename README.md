@@ -1,6 +1,6 @@
 # Make Me Happier: Evoking Emotions Through Image Diffusion Models
 
-## [Paper](https://arxiv.org/pdf/2403.08255.pdf) | [Dataset](https://drive.google.com/drive/folders/1aaZUNo-domsSOH_2_flRU8LMZjptPU28?usp=drive_link) | [Models](https://drive.google.com/drive/folders/1Wkrq5d3JC96PecGJQliz7h5cUmfACpqi?usp=sharing) | [Poster](https://drive.google.com/file/d/1wQ9Ui4ei5wDcPJwc-3Xlh1Tsj_u7-jVv/view?usp=drive_link) | [Video](https://youtu.be/AA4X7EAmBbw)
+## [Paper](https://arxiv.org/pdf/2403.08255.pdf) | [Dataset](https://drive.google.com/drive/folders/1aaZUNo-domsSOH_2_flRU8LMZjptPU28?usp=drive_link) | [Models](https://drive.google.com/drive/folders/1Wkrq5d3JC96PecGJQliz7h5cUmfACpqi?usp=sharing) | [Poster](https://drive.google.com/file/d/1wQ9Ui4ei5wDcPJwc-3Xlh1Tsj_u7-jVv/view?usp=drive_link) | [Presentation](https://www.youtube.com/watch?v=AA4X7EAmBbw) | [DemoVideo](https://www.youtube.com/watch?v=vunsxY6UdJI)
 PyTorch implementation of EmoEditor, an emotion-evoked diffusion model.  
 This work has been accepted to ICCV 2025.
 
