@@ -81,6 +81,8 @@ To calculate ESMI, change `image_name_src`, `image_name_edit` and `tgt_emo`, and
 python metric_ESMI.py
 ```
 
+The human annotations of emotion-evoking regions are available for download [here](https://drive.google.com/drive/folders/1mlPGaDzuS_Q1XgXOhBL90sJSV2ny3beC?usp=sharing).
+
 ## Visualization
 <div align=left><img src="./fig/fig9_visualization.png" width="70%" height="70%" ></div>
 Visualisation of Generated Images from Different Methods. The target emotion is highlighted in red, and the source image is framed in green. The blue number below each image is its CAM-based ESMI score, with higher values being better.
