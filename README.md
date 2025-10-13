@@ -68,7 +68,7 @@ We have conducted a series of Mechanical Turk experiments using the [Psiturk](ht
 <div align=left><img src="./fig/fig6_user_study.png" width="70%" height="70%" ></div>
 Results from Human Psychophysics Experiments. The proportions of images that human participants prefer our EmoEditor over all other methods on the x-axis are presented. Chance is 50% (red dotted line). Error bars are standard errors. 
 
-Data from all participants in our human psychophysics experiments are available at the [link](https://drive.google.com/file/d/1m-N02qJ8E0jA8KmMbKzqVSWH8lpYV5V9/view?usp=sharing).
+Data from all participants in our human psychophysics experiments are available at the [link](https://drive.google.com/drive/folders/1HU4dXBO74OcpFrRSG4xGmGygakLqGitR?usp=sharing).
 
 
 ## Emotional Structure Matching Index (ESMI)
